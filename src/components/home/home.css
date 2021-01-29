@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 5px 25px;
+  box-sizing: border-box;
+  background: #212529;
+  /* background: rgb(1, 1, 20); */
+}
+html {
+  scroll-behavior: smooth;
+}
+#home {
+  width: 100%;
+  height: 94vh;
+}
+.menu {
+  display: none;
+}
+.menu i {
+  font-size: 30px;
+}
+.expand-menu {
+  display: flex;
+  text-align: center;
+  display: none;
+}
+.expand-menu a {
+  padding: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+.header-nav {
+  display: flex;
+  color: white;
+  width: 100%;
+  height: 8vh;
+}
+.nav-links {
+  display: flex;
+  margin-left: auto;
+  list-style: none;
+}
+.nav-links li {
+  padding: 10px;
+}
+.nav-links li a {
+  padding: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-decoration: none;
+  color: white;
+}
+.nav-links li a:hover {
+  color: rgb(0, 255, 255);
+  cursor: pointer;
+}
+
+.header-nav svg text {
+  stroke: rgb(0, 255, 255);
+  font-family: fantasy;
+  font-size: 25px;
+  stroke-width: 1;
+  background-color: white;
+  animation: textAnimate 3s infinite alternate;
+}
+
+.header-body {
+  width: 100%;
+  display: flex;
+}
+.sec-left,
+.sec-right {
+  width: 50%;
+  color: white;
+  font-size: 35px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.sec-left {
+  margin-top: 165px;
+  padding-left: 5px;
+}
+.socio-icons {
+  padding-left: 2px;
+}
+.socio-icons a {
+  text-decoration: none;
+  padding: 0px;
+}
+.icon-style {
+  font-size: 20px;
+  color: rgb(141, 140, 140);
+  padding-right: 0px;
+}
+.icon-style:hover {
+  color: aqua;
+  cursor: pointer;
+}
+
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+  }
+  100% {
+    stroke-dasharray: 50% 0;
+  }
+}
+
+@media (max-width: 450px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .expand-menu {
+    display: block;
+    margin-top: 15px;
+  }
+  .header-nav {
+    padding-left: 20px;
+  }
+  .header-nav svg text {
+    font-size: 30px;
+  }
+  .header-nav {
+    width: 100%;
+  }
+  .nav-links {
+    display: none;
+  }
+  .menu {
+    display: block;
+    margin-top: 25px;
+  }
+  .header-body {
+    display: flex;
+    flex-direction: column;
+  }
+  .sec-right img {
+    display: none;
+  }
+  .sec-left {
+    width: 100%;
+    padding-left: 15px;
+  }
+  .socio-icons a {
+    padding-right: 20px;
+  }
+}

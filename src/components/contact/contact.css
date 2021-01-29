@@ -1,0 +1,73 @@
+#contact {
+  margin-top: 120px;
+  width: 100%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+}
+#contact form {
+  margin-top: 40px;
+}
+#contact label {
+  color: white;
+  font-size: 15px;
+  margin-left: 150px;
+}
+.form-message label {
+  padding-left: 37px;
+}
+
+.form-name input,
+.form-email input {
+  border: 1px solid white;
+  width: 100%;
+  height: 35px;
+  color: white;
+  border-radius: 5px;
+}
+#contact textarea {
+  border: 1px solid white;
+  border-radius: 12px;
+  color: white;
+}
+.form-submit input {
+  border: 2px solid aqua;
+  margin-left: -34px;
+  width: 80px;
+  height: 30px;
+  transition: 0.5s;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.form-submit input:hover {
+  border-color: white;
+  color: aqua;
+}
+
+.form-name,
+.form-email,
+.form-message {
+  margin-bottom: 15px;
+  display: grid;
+  grid-template-columns: 28% 50%;
+  /* text-align: center; */
+}
+
+@media (max-width: 450px) {
+  .form-name input,
+  .form-email input {
+    width: 150%;
+    margin-left: -40px;
+    padding-left: 10px;
+  }
+  #contact textarea {
+    width: 150%;
+    margin-left: -40px;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  .form-submit input {
+    margin-left: -20px;
+  }
+}
